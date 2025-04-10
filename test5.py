@@ -9,7 +9,7 @@ parser = argparse.ArgumentParser(description='Attention-guided HDR Testing')
 # 参数设置
 
 parser.add_argument('--test_whole_Image', default='./test.txt')
-parser.add_argument('--trained_model_dir', default='./')
+parser.add_argument('--trained_model_dir', default='./')#这是用于存放模型参数的文件夹，注意选取，在这里我把文件给提出来了
 parser.add_argument('--trained_model_filename', default='trained_model_20000.pt')#trained_model_20000.pt是训练出来最优的模型（不是训练了2w轮，是我把后缀改成了2w，实际大概练了1w7轮）
 parser.add_argument('--result_dir', default='./result/')
 parser.add_argument('--use_cuda', default=True)
